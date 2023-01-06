@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let mockFoods = MockFoods()
-    private let mockDrinks = MockDrinks()
-    private let mockDesserts = MockDesserts()
-    
+    let viewModel = MenuViewViewModel()
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -27,7 +24,7 @@ struct ContentView: View {
                     Spacer()
                 }
                 LazyVGrid(columns: columns){
-                    ForEach(mockFoods.foods) { food in
+                    ForEach(viewModel.mockFoods.foods) { food in
                         Element(name: food.title)
                     }
                 }
@@ -38,7 +35,7 @@ struct ContentView: View {
                     Spacer()
                 }
                 LazyVGrid(columns: columns){
-                    ForEach(mockDrinks.drinks) { drink in
+                    ForEach(viewModel.mockDrinks.drinks) { drink in
                         Element(name: drink.title)
                     }
                 }
@@ -49,7 +46,7 @@ struct ContentView: View {
                     Spacer()
                 }
                 LazyVGrid(columns: columns){
-                    ForEach(mockDesserts.desserts) { dessert in
+                    ForEach(viewModel.mockDesserts.desserts) { dessert in
                         Element(name: dessert.title)
                     }
                 }

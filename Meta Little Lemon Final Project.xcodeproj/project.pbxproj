@@ -12,6 +12,7 @@
 		DB22C59A2967910C0064F3A3 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C5992967910C0064F3A3 /* Ingredient.swift */; };
 		DB22C59E296797310064F3A3 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C59D296797310064F3A3 /* FilterView.swift */; };
 		DB22C5A22967996F0064F3A3 /* SortMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22C5A12967996F0064F3A3 /* SortMenu.swift */; };
+		DB3D3B3C2968E88C00422936 /* MenuViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D3B3B2968E88C00422936 /* MenuViewViewModel.swift */; };
 		DBDA31B7294CA7D700FAD6C6 /* Meta_Little_Lemon_Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA31B6294CA7D700FAD6C6 /* Meta_Little_Lemon_Final_ProjectApp.swift */; };
 		DBDA31B9294CA7D700FAD6C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA31B8294CA7D700FAD6C6 /* ContentView.swift */; };
 		DBDA31BB294CA7D800FAD6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDA31BA294CA7D800FAD6C6 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		DB22C5992967910C0064F3A3 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		DB22C59D296797310064F3A3 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		DB22C5A12967996F0064F3A3 /* SortMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortMenu.swift; sourceTree = "<group>"; };
+		DB3D3B3B2968E88C00422936 /* MenuViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewViewModel.swift; sourceTree = "<group>"; };
 		DBDA31B3294CA7D700FAD6C6 /* Meta Little Lemon Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meta Little Lemon Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDA31B6294CA7D700FAD6C6 /* Meta_Little_Lemon_Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta_Little_Lemon_Final_ProjectApp.swift; sourceTree = "<group>"; };
 		DBDA31B8294CA7D700FAD6C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				DBDA31B6294CA7D700FAD6C6 /* Meta_Little_Lemon_Final_ProjectApp.swift */,
 				DBDA31B8294CA7D700FAD6C6 /* ContentView.swift */,
 				DB22C59D296797310064F3A3 /* FilterView.swift */,
+				DB3D3B3B2968E88C00422936 /* MenuViewViewModel.swift */,
 				DB3D3B3A2968DB1900422936 /* Models */,
 				DBDA31BA294CA7D800FAD6C6 /* Assets.xcassets */,
 				DBDA31BC294CA7D800FAD6C6 /* Preview Content */,
@@ -166,6 +169,7 @@
 				DB22C59A2967910C0064F3A3 /* Ingredient.swift in Sources */,
 				DBDA31B9294CA7D700FAD6C6 /* ContentView.swift in Sources */,
 				DB22C59E296797310064F3A3 /* FilterView.swift in Sources */,
+				DB3D3B3C2968E88C00422936 /* MenuViewViewModel.swift in Sources */,
 				DBDA31B7294CA7D700FAD6C6 /* Meta_Little_Lemon_Final_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
