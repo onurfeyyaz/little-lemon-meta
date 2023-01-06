@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+private var foods = [MenuItem]()
+
 struct ContentView: View {
     var body: some View {
         NavigationView {
@@ -14,6 +16,15 @@ struct ContentView: View {
                 
             }
             .navigationTitle("Menu")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: FilterView()) {
+                        Image(systemName: "slider.horizontal.3")
+                            .imageScale(.large)
+                    }
+                    
+                }
+            }
         }
     }
 }

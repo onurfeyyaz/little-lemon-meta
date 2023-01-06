@@ -10,5 +10,5 @@ import Foundation
 struct MenuItem: Identifiable {
     let id = UUID()
     let title: String
-    let ingredients: Ingredient
+    let ingredients: [Ingredient]
 }
