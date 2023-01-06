@@ -14,7 +14,7 @@ enum MenuCategory: String, CaseIterable {
 }
 
 class MockFoods {
-    private var foods = [MenuItem]()
+    var foods = [MenuItem]()
     
     init(foods: [MenuItem] = [MenuItem]()) {
         for i in 1...12 {
@@ -24,7 +24,7 @@ class MockFoods {
 }
 
 class MockDrinks {
-    private var drinks = [MenuItem]()
+    var drinks = [MenuItem]()
     
     init(drinks: [MenuItem] = [MenuItem]()) {
         for i in 1...8 {
@@ -34,7 +34,7 @@ class MockDrinks {
 }
 
 class MockDesserts {
-    private var desserts = [MenuItem]()
+    var desserts = [MenuItem]()
     
     init(desserts: [MenuItem] = [MenuItem]()) {
         for i in 1...4 {
