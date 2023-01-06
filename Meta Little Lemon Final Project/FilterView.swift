@@ -21,7 +21,6 @@ struct FilterView: View {
                         Text(item.rawValue)
                         
                     }
-                    
                 }
             }.navigationTitle("Filter")
         }

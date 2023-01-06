@@ -42,6 +42,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB3D3B3A2968DB1900422936 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB22C595296790000064F3A3 /* MenuItem.swift */,
+				DB22C597296790C90064F3A3 /* MenuCategory.swift */,
+				DB22C5992967910C0064F3A3 /* Ingredient.swift */,
+				DB22C5A12967996F0064F3A3 /* SortMenu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DBDA31AA294CA7D700FAD6C6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				DBDA31B6294CA7D700FAD6C6 /* Meta_Little_Lemon_Final_ProjectApp.swift */,
-				DB22C59D296797310064F3A3 /* FilterView.swift */,
-				DB22C595296790000064F3A3 /* MenuItem.swift */,
-				DB22C597296790C90064F3A3 /* MenuCategory.swift */,
-				DB22C5992967910C0064F3A3 /* Ingredient.swift */,
-				DB22C5A12967996F0064F3A3 /* SortMenu.swift */,
 				DBDA31B8294CA7D700FAD6C6 /* ContentView.swift */,
+				DB22C59D296797310064F3A3 /* FilterView.swift */,
+				DB3D3B3A2968DB1900422936 /* Models */,
 				DBDA31BA294CA7D800FAD6C6 /* Assets.xcassets */,
 				DBDA31BC294CA7D800FAD6C6 /* Preview Content */,
 			);
