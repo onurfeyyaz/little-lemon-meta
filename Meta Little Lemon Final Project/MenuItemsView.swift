@@ -26,7 +26,9 @@ struct MenuItemsView: View {
                 }
                 LazyVGrid(columns: columns){
                     ForEach(viewModel.mockFoods.foods) { food in
-                        Element(name: food.title)
+                        NavigationLink(destination:MenuItemDetailsView(model: food)){
+                            Element(name: food.title)
+                        }
                     }
                 }
                 HStack {
@@ -37,7 +39,9 @@ struct MenuItemsView: View {
                 }
                 LazyVGrid(columns: columns){
                     ForEach(viewModel.mockDrinks.drinks) { drink in
-                        Element(name: drink.title)
+                        NavigationLink(destination: MenuItemDetailsView(model: drink)){
+                            Element(name: drink.title)
+                        }
                     }
                 }
                 HStack {
@@ -48,7 +52,9 @@ struct MenuItemsView: View {
                 }
                 LazyVGrid(columns: columns){
                     ForEach(viewModel.mockDesserts.desserts) { dessert in
-                        Element(name: dessert.title)
+                        NavigationLink(destination: MenuItemDetailsView(model: dessert)) {
+                            Element(name: dessert.title)
+                        }
                     }
                 }
             }
@@ -61,7 +67,8 @@ struct MenuItemsView: View {
                     }
                     
                 }
-            }        }
+            }
+        }
     }
 }
 

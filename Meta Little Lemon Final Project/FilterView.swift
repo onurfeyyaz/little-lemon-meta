@@ -19,10 +19,10 @@ struct FilterView: View {
                 Section("Sort By") {
                     ForEach(SortMenu.allCases, id: \.self) { item in
                         Text(item.rawValue)
-                        
                     }
                 }
-            }.navigationTitle("Filter")
+            }
+            .navigationTitle("Filter")
             
         }
     }

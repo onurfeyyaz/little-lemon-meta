@@ -11,7 +11,6 @@ class MenuViewViewModel {
     let mockFoods = MockFoods()
     let mockDrinks = MockDrinks()
     let mockDesserts = MockDesserts()
-    
 }
 
 class MockFoods {

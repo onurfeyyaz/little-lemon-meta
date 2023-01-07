@@ -8,37 +8,36 @@
 import SwiftUI
 
 struct MenuItemDetailsView: View {
-    var name: String = "asd"
-    var price: Double = 1.1
-    var ordered: Int = 1
-    var ingredients: [Ingredient] = [.pasta]
+    var model: MenuItem
     
     var body: some View {
-        VStack {
+        ScrollView {
             HStack {
-                Text("Food Name")
+                Text(model.title)
                     .font(.largeTitle)
+                    .bold()
+                    .padding(.leading)
                 Spacer()
             }
             Image(uiImage: UIImage(named: "logo")!)
                 .resizable()
                 .scaledToFit()
                 .padding(EdgeInsets(top: 0, leading: 70, bottom: 0, trailing: 70))
-            Text("Price:\n\(price)")
-            Text("Ordered:\n\(ordered)")
-            ScrollView {
-                Text("Ingredients")
-                ForEach(ingredients, id: \.self) {
-                    ingredient in
-                    Text(ingredient.rawValue)
-                }
+            Text("Price:\n\(model.price)")
+            Text("Ordered:\n\(model.orders)")
+            Text("Ingredients:")
+            ForEach(model.ingredient, id: \.self) {
+                ingredient in
+                Text(ingredient.rawValue)
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct MenuItemDetailsView_Previews: PreviewProvider {
+    static let menuPreview = MenuItem(title: "Title", ingredient: [.spinach], price: 1.0, menuCategory: .food, orders: 1, price2: 1)
     static var previews: some View {
-        MenuItemDetailsView()
+        MenuItemDetailsView(model: menuPreview)
     }
 }
