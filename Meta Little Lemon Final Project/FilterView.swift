@@ -23,6 +23,7 @@ struct FilterView: View {
                     }
                 }
             }.navigationTitle("Filter")
+            
         }
     }
 }

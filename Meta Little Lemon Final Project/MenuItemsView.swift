@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MenuItemsView: View {
     let viewModel = MenuViewViewModel()
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -60,8 +61,7 @@ struct ContentView: View {
                     }
                     
                 }
-            }
-        }
+            }        }
     }
 }
 
@@ -77,8 +77,8 @@ struct Element: View {
     }
 }
     
-struct ContentView_Previews: PreviewProvider {
+struct MenuItemsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MenuItemsView()
     }
 }
